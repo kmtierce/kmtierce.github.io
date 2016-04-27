@@ -71,7 +71,7 @@ nav li.current a:hover {
 footer {
 	background-color: #42adb7 ;
 	color: #ffffff ;
-	font-family: "BlurLight" ;
+	font-family: BlurLight, arial, sans-serif ;
 	text-transform: uppercase ;
 	font-size: 10pt ;
 	width: 1024px ;

@@ -1,0 +1,11 @@
+@font-face {
+	font-family: "BlurLight";
+		src: url("../fonts/blurlight-webfont.eot");
+		src: url("../fonts/blurlight-webfont.eot?#iefix") format("embedded-opentype"),
+			 url("../fonts/blurlight-webfont.woff2") format("woff2"),
+			 url("../fonts/blurlight-webfont.woff") format("woff"),
+			 url("../fonts/blurlight-webfont.ttf") format("truetype"),
+			 url("../fonts/blurlight-webfont.svg#blurlight") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
