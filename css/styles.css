@@ -27,21 +27,59 @@ body {
 	min-height: 100% ;
 	margin: 0 auto ;
 	position: relative ;
+	/*padding-top: 140px ;*/
 }
 
 header {
 	border-top: 4px solid #42adb7 ;
 	border-bottom: 10px solid #c2c2c2 ;
-	padding: 0 25px ;
+	padding: 0 ;
 	height: 120px ;
-
+	/*position: fixed ;*/
+	background-color: #ffffff ;
+	width: 1024px ;
+	margin: 0 auto ;
+	top: -1px ;
 }
+
+/*header.large {
+	height: 120px;
+	border-bottom: 10px solid #c2c2c2 ;
+}
+
+header.large div {
+	float: left ;
+	padding-left: 25px ;
+	width: 102px ;
+	height: 78px ;
+	position: relative ;
+	top: 50% ;
+	transform: translateY(-50%) ;
+	background-image: url("img/logo.jpg") ;
+}
+
+header.small {
+	height: 58px;
+	border-bottom: 1px solid #c2c2c2 ;
+}
+
+header.small div {
+	float: left ;
+	padding-left: 25px ;
+	width: 59px ;
+	height: 42px ;
+	position: relative ;
+	top: 50% ;
+	transform: translateY(-50%) ;
+	background-image: url ("img/logo-sm.jpg") ;
+}*/
 
 nav {
 	font-family: "BlurLight" ;
 	text-transform: uppercase ;
 	font-size: 18pt ;
 	float: right ;
+	padding-right: 25px ;
 	position: relative ;
 	top: 50% ;
 	transform: translateY(-50%) ;
@@ -81,6 +119,7 @@ nav li.current a:hover {
 
 #logo {
 	float: left ;
+	padding-left: 25px ;
 	position: relative ;
 	top: 50% ;
 	transform: translateY(-50%) ;
@@ -116,39 +155,199 @@ footer p {
 	padding-top: 10px ;
 	}
 
-div.lefty {
-	width: 350px ;
-	height: 350px ;
-	float: left ;
-}
-
-div.righty {
-	width: 450px ;
-	float: right ;
-}
-
-p.headline {
+h1, h2 {
 	font-family: "Oswald" ;
-	font-size: 24px ;
-	line-height: 24px ;
+	font-size: 32px ;
+	font-weight: normal ;
+	line-height: 32px ;
 	color: #42adb7 ;
 	text-transform: uppercase ;
 	margin: 0 0 10px 0 ;
-	padding-left: 10px ;
+}
+
+h2 {
+	font-size: 24px ;
+	line-height: 24px ;
+}
+
+h3 {
+	font-family: "Open Sans", Verdana, Arial, sans-serif ;
+	font-style: italic ;
+	font-weight: bold ;
+	font-size: 14px ;
+	margin: 0 0 10px 0 ;
 }
 
 p.pcopy {
 	font-family: "Open Sans" ;
 	font-size: 12px ;
 	margin: 0 0 10px 0 ;
-	padding-left: 10px ;
-	width: 450px ;
+	width: 100% ;
 }
 
-.projecttop {
-	font-family: "Open Sans", Verdana, Arial, sans-serif ;
-	font-style: italic ;
-	font-weight: bold ;
-	padding-left: 10px ;
+/*Project page divs*/
+
+div.lefty {
+	width: 350px ;
+	height: 350px ;
+	float: left ;
+	padding-right: 10px ;
+}
+
+div.righty {
+	width: 440px ;
+	float: right ;
+}
+
+/*                        */
+/* Band page divs & rules */
+/*                        */
+
+.bandleft {
+	float: left ;
+	margin: 0 10px 0 0 ;
+	padding: 0 ;
+}
+
+.bandleft img {
+	width: 250px ;
+	padding-bottom: 10px ;
+}
+
+.lineup {
+	width: 250px ;
+	border-top: 4px solid #42adb7 ;
+	padding-top: 10px ;
 	margin: 0 0 10px 0 ;
+}
+
+.dudes {
+	list-style: none ;
+	padding: 0 ;
+	margin: 0 ;
+	font-family: "Open Sans", Verdana, Arial, sans-serif ;
+	font-size: 14px ;
+	line-height: 24px ;
+}
+
+.dudes > li { 
+    padding-left: 1em ; 
+    text-indent: -.7em ;
+}
+
+.dudes > li:before {
+    content: "\25AA " ;
+    color: #42adb7 ;
+    padding-right: 5px ;
+}
+
+.bandbio {
+	width: 540px ;
+	float: right ;
+}
+
+.bandbio iframe {
+	padding-bottom: 10px ;
+}
+
+#gallery {
+	border-top: 4px solid #42adb7 ;
+	padding-top: 10px ;
+	width: 540px ;
+	float: right ;
+	text-align: justify ;
+}
+
+#gallery img {
+	width: 125px ;
+	margin: auto ;
+	display: inline-block ;
+	padding-bottom: 10px ;
+}
+
+#gallery::after {
+	content: "" ;
+	display: inline-block ;
+	width: 100% ;
+}
+
+/*                        */
+/* Band & project indexes */
+/*                        */
+
+.indexbar {
+	max-width: 800px ;
+	height: 170px ;
+	margin-bottom: 10px ;
+	padding: 10px ;
+	font-family: "Oswald" ;
+	font-weight: normal ;
+	color: #FFFFFF ;
+	text-transform: uppercase ;
+	background-color: #42adb7 ;
+	background-blend-mode: soft-light ;
+	transition: all .5s ease ;
+	-moz-transition: all .5s ease ; /* Firefox 4 */
+	-webkit-transition: all .5s ease ; /* Safari and Chrome */
+	-o-transition: all .5s ease ; /* Opera */
+}
+
+.indexbar:hover {
+	background-color: #989898 ;
+}
+
+.indexbar p:first-of-type {
+	font-family: "Oswald" ;
+	font-size: 32px ;
+	font-weight: normal ;
+	line-height: 32px ;
+	color: #FFFFFF ;
+	text-transform: uppercase ;
+	text-decoration: none ;
+}
+
+.indexbar p {
+	font-size: 18px ;
+	height: 32px ;
+	color: #FFFFFF ;
+	vertical-align: top ;
+	display: inline ;
+}
+
+a.indexlink {
+	text-decoration: none ;
+}
+
+div.indexbar a {
+	font-family: "Oswald" ;
+	font-size: 32px ;
+	font-weight: normal ;
+	line-height: 32px ;
+	color: #FFFFFF ;
+	text-transform: uppercase ;
+	text-decoration: none ;
+}
+
+div.ariel {
+	background-image: url("../img/ariel/banner.jpg") ;
+	background-position: center center ;
+	background-repeat: no-repeat ;
+}
+
+div.badhabits {
+	background-image: url("../img/bands-badhabits.jpg") ;
+	background-position: center center ;
+	background-repeat: no-repeat ;
+}
+
+div.straightlines {
+	background-image: url("../img/bands-straightlines.jpg") ;
+	background-position: center center ;
+	background-repeat: no-repeat ;
+}
+
+div.mightymambo {
+	background-image: url("../img/project-mightymambo.jpg") ;
+	background-position: center center ;
+	background-repeat: no-repeat ;
 }
