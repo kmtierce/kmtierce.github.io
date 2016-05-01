@@ -27,7 +27,7 @@ body {
 	min-height: 100% ;
 	margin: 0 auto ;
 	position: relative ;
-	/*padding-top: 140px ;*/
+	padding-top: 140px ;
 }
 
 header {
@@ -35,27 +35,25 @@ header {
 	border-bottom: 10px solid #c2c2c2 ;
 	padding: 0 ;
 	height: 120px ;
-	/*position: fixed ;*/
+	position: fixed ;
 	background-color: #ffffff ;
 	width: 1024px ;
 	margin: 0 auto ;
 	top: -1px ;
 }
 
-/*header.large {
+header.large {
 	height: 120px;
 	border-bottom: 10px solid #c2c2c2 ;
 }
 
 header.large div {
 	float: left ;
-	padding-left: 25px ;
 	width: 102px ;
 	height: 78px ;
 	position: relative ;
 	top: 50% ;
 	transform: translateY(-50%) ;
-	background-image: url("img/logo.jpg") ;
 }
 
 header.small {
@@ -65,14 +63,23 @@ header.small {
 
 header.small div {
 	float: left ;
-	padding-left: 25px ;
 	width: 59px ;
 	height: 42px ;
 	position: relative ;
 	top: 50% ;
 	transform: translateY(-50%) ;
-	background-image: url ("img/logo-sm.jpg") ;
-}*/
+}
+
+header.small img {
+	opacity: 0 ;
+}
+
+header,nav, a, img, li{
+  transition: all 0.5s;
+  -moz-transition: all 0.5s; /* Firefox 4 */
+  -webkit-transition: all 0.5s; /* Safari and Chrome */
+  -o-transition: all 0.5s; /* Opera */
+}
 
 nav {
 	font-family: "BlurLight" ;
@@ -117,12 +124,17 @@ nav li.current a:hover {
 	color: #42adb7 ;
 }
 
-#logo {
+div #logo {
+	width: 102px ;
+	height: 78px ;
 	float: left ;
-	padding-left: 25px ;
+	margin-left: 25px ;
 	position: relative ;
 	top: 50% ;
 	transform: translateY(-50%) ;
+	background-image: url("../img/logo-sm.jpg") ;
+	background-position: left center ;
+	background-repeat: no-repeat ;
 }
 
 .clearfooter {
@@ -335,19 +347,25 @@ div.ariel {
 }
 
 div.badhabits {
-	background-image: url("../img/bands-badhabits.jpg") ;
+	background-image: url("../img/bad-habits/banner.jpg") ;
 	background-position: center center ;
 	background-repeat: no-repeat ;
 }
 
 div.straightlines {
-	background-image: url("../img/bands-straightlines.jpg") ;
+	background-image: url("../img/straight-lines/banner.jpg") ;
 	background-position: center center ;
 	background-repeat: no-repeat ;
 }
 
 div.mightymambo {
-	background-image: url("../img/project-mightymambo.jpg") ;
+	background-image: url("../img/projects-mightymambo.jpg") ;
+	background-position: center center ;
+	background-repeat: no-repeat ;
+}
+
+div.manwalking {
+	background-image: url("../img/projects-manwalking.jpg") ;
 	background-position: center center ;
 	background-repeat: no-repeat ;
 }
