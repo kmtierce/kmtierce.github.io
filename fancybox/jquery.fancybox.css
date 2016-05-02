@@ -84,6 +84,7 @@
 	margin-left: -22px;
 	background-position: 0 -108px;
 	opacity: 0.8;
+	filter: alpha(opacity=80) ; /* For IE8 and earlier */
 	cursor: pointer;
 	z-index: 8060;
 }
@@ -103,6 +104,7 @@
 	cursor: pointer;
 	z-index: 8040;
 	opacity: 0.0;
+	filter: alpha(opacity=0) ; /* For IE8 and earlier */
 	transition: all .5s ease ;
 	-moz-transition: all .5s ease ; /* Firefox 4 */
 	-webkit-transition: all .5s ease ; /* Safari and Chrome */
@@ -111,6 +113,7 @@
 
 .fancybox-close:hover {
 	opacity: 1.0;
+	filter: alpha(opacity=100) ; /* For IE8 and earlier */
 }
 
 .fancybox-nav {

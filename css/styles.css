@@ -12,6 +12,17 @@
 	font-style: normal;
 }
 
+/*                        */
+/* Transitions for header */
+/*                        */
+
+header, nav, a, img, li {
+	transition: all 0.5s;
+	-moz-transition: all 0.5s; /* Firefox 4 */
+	-webkit-transition: all 0.5s; /* Safari and Chrome */
+	-o-transition: all 0.5s; /* Opera */
+}
+
 html, body {
 	height: 100% ;
 }
@@ -29,6 +40,10 @@ body {
 	position: relative ;
 	padding-top: 140px ;
 }
+
+/*                        */
+/*  Header, nav & footer  */
+/*                        */
 
 header {
 	border-top: 4px solid #42adb7 ;
@@ -72,13 +87,7 @@ header.small div {
 
 header.small img {
 	opacity: 0 ;
-}
-
-header,nav, a, img, li{
-  transition: all 0.5s;
-  -moz-transition: all 0.5s; /* Firefox 4 */
-  -webkit-transition: all 0.5s; /* Safari and Chrome */
-  -o-transition: all 0.5s; /* Opera */
+	filter: alpha(opacity=0) ; /* For IE8 and earlier */
 }
 
 nav {
@@ -275,6 +284,11 @@ div.righty {
 	margin: auto ;
 	display: inline-block ;
 	padding-bottom: 10px ;
+}
+
+#gallery img:hover {
+	opacity: 0.8 ;
+	filter: alpha(opacity=80) ; /* For IE8 and earlier */
 }
 
 #gallery::after {
