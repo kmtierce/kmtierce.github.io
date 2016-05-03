@@ -167,7 +167,7 @@ footer p {
 }
 
 #content {
-	margin: 50px auto;
+	margin: 50px auto ;
 	width: 800px ;
 	height: auto ;
 	border-top: 4px solid #42adb7 ;
@@ -420,4 +420,20 @@ div.seville {
 	background-image: url("../img/projects/projects-seville.jpg") ;
 	background-position: center center ;
 	background-repeat: no-repeat ;
+}
+
+.contact{
+	max-width: 240px ;
+	min-width: 240px ;
+	display: inline-block ;
+}
+
+.contact-wrap {
+	text-align: justify ;
+}
+
+.contact-wrap::after {
+	content: "" ;
+	display: inline-block ;
+	width: 100% ;
 }
