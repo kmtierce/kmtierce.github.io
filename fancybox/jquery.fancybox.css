@@ -239,7 +239,7 @@
 	font-weight: normal;
 	line-height: 24px;
 	white-space: nowrap;
-	font-family: "Oswald" ;
+	font-family: "Oswald", "Helvetica Narrow", "Arial Narrow", Helvetica, Arial, sans-serif ;
 	text-transform: uppercase ;
 }
 
